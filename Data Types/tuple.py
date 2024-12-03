@@ -8,14 +8,20 @@ def converted_seconds(seconds):
     return hours, minutes, remaining_seconds
 
 result = converted_seconds(5000)
-print(type(result))
-print(result)
+# print(type(result))
+# print(result)
 
 # Unpacking the Tuple
 
 hours, minutes , seconds = result
-print(hours, minutes, seconds)
+# print(hours, minutes, seconds)
 
 hours, minutes, seconds = converted_seconds(2000)
-print(hours, minutes, seconds)
+# print(hours, minutes, seconds)
+
+
+# Tuple from List
+winners = ["Ashley", "Dylan", "Reese"]
+for index, person in enumerate(winners):
+    print("{} - {}".format(index + 1, person))
 
