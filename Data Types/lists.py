@@ -1,5 +1,5 @@
 x = ["Now", "we", "are", "cooking!"]
-print(type(x))
+# print(type(x))
 # print(x, end=" ")
 len(x)
 
@@ -39,4 +39,28 @@ def full_emails(people):
     
 new_list = [("alex@email.com", "Alex Diego"), ("shay@example.com", "Shay Com"), ("shami@dummy.com", "Sam Chusu")]
 
-print(full_emails(new_list))
+# print(full_emails(new_list))
+
+
+# List Comprehension 
+
+multiples = []
+for x in range(1,11):
+    multiples.append(x*7)
+
+# print(multiples)
+
+# Now with LC :- 
+multiples = [x*7 for x in range(1,11)]
+# print(multiples)
+
+#######################################
+
+languages = ["Python", "Perl", "Ruby", "Go", "Java", "C"]
+lengths = [len(language) for language in languages]
+
+# print(lengths)
+
+# Now with LC with conditions :-
+z = [x for x in range(0,101) if x % 3 == 0]
+print(z)
